@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  font-size: 16px; /* 增加字體大小 */
+}
+
+#clickedButtonText {
+	font-size: 16px;
+}
+
+.audio-container {
+  text-align: center;
+  width: 100%; /* 讓播放器佔滿整個螢幕寬度 */
+}
+
+#audioPlayer {
+  width: 100%; /* 讓播放器佔滿父元素的寬度 */
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.audio-button {
+  margin: 3px;
+  padding: 7px; /* 調整按鈕的內邊距 */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: calc(100% - 20px); /* 考慮到margin的寬度 */
+  box-sizing: border-box;
+}
+
+.audio-button.clicked {
+  background-color: lightgreen;
+}
+
+.recovery-mode {
+  background-color: pink;
+}
